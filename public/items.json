@@ -1,0 +1,33 @@
+[
+
+    {
+
+        "name": "GBH18V-26DK25",
+        "img": "https://www.boschtools.com/us/en/ocsmedia/optimized/800x450xe/cordlessrotaryhammer18vGBH18V26DK25boschkit.png",
+        "description":"18V EC Brushless SDS-plus® Bulldog™ 1 In. Rotary Hammer Kit with (2) CORE18V 4.0 Ah ",
+        "minimumOrderQuantity":"80",
+        "availableQuantity":"340",
+        "price":"2000",
+        "id":1
+    },
+    {
+     
+        "name": "GBH18V-45CK27",
+        "img": "https://www.boschtools.com/us/en/ocsmedia/optimized/800x450xe/rotaryhammersdsmaxhitmanGBH18V45CGBA18V120boschkit(13).png",
+        "description":"PROFACTOR 18V Hitman Connected-Ready SDS-max® 1-7/8 In. Rotary Hammer Kit with ",
+        "minimumOrderQuantity":"80",
+        "availableQuantity":"340",
+        "price":"1500",
+        "id":2
+    },
+    {
+     
+      "name": "GBH18V-36CK27",
+      "img": "https://www.boschtools.com/us/en/ocsmedia/optimized/800x450xe/cordlessrotaryhammer18vbulldogGBH18V26boschhero.png",
+      "description":"PROFACTOR 18V Hitman Connected-Ready SDS-max® 1-9/16 In. Rotary Hammer Kit with (2) CORE18V 12.0 Ah PROFACTOR Exclusive Batteries",
+      "minimumOrderQuantity":"120",
+      "availableQuantity":"400",
+      "price":"1200",
+      "id":3
+    }
+  ]
