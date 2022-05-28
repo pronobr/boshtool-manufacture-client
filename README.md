@@ -6,7 +6,7 @@ BoshTrool is a Drill Machine tool websit and processes involved in running the d
 ### Live Server Site [https://pacific-scrubland-09811.herokuapp.com/](https://pacific-scrubland-09811.herokuapp.com/)
 
 
- ### features and functionality
+ <!-- ### features and functionality -->
 
 - used firebase for authenticatation
 - used mongodb  for stored all data
