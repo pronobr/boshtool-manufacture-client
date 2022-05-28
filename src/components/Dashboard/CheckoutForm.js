@@ -12,7 +12,7 @@ const CheckoutForm = ({user}) => {
  
     // console.log(price)
     useEffect(() => {
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch('https://pacific-scrubland-09811.herokuapp.com/create-payment-intent', {
             method: 'POST',
              headers: {
                 'content-type': 'application/json',
@@ -79,7 +79,7 @@ const CheckoutForm = ({user}) => {
                             appointment: _id,
                             transactionId: paymentIntent.id
                         }
-                        fetch(`http://localhost:5000/booking/${_id}`, {
+                        fetch(`https://pacific-scrubland-09811.herokuapp.com/booking/${_id}`, {
                             method: 'PATCH',
                             headers: {
                                 'content-type': 'application/json',

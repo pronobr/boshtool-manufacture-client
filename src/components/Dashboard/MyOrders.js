@@ -10,7 +10,7 @@ const MyOrders = () => {
     const [user, loading, error] = useAuthState(auth);
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/booking?email=${user.email}`,{
+            fetch(`https://pacific-scrubland-09811.herokuapp.com/booking?email=${user.email}`,{
               method: 'GET',
               headers:{
                 'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -31,7 +31,7 @@ const MyOrders = () => {
     // if(loading)
     return (
       <div class="overflow-x-auto">
-      <table class="table w-full">
+      <table class="table md:w-full sm:table-normal">
       
         <thead>
           <tr>
@@ -40,12 +40,13 @@ const MyOrders = () => {
             <th>Price</th>
             <th>Payment</th>
             <th>Cancle</th>
+            <th>Transaction Id</th>
           </tr>
         </thead>
         <tbody>
          
           {
-              myOrder.map(items =><OrderItems items ={items}></OrderItems>)
+              myOrder.map(items =><OrderItems  setMyOrder ={setMyOrder} myOrder ={myOrder} items ={items}></OrderItems>)
           }
         </tbody>
       </table>

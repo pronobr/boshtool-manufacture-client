@@ -13,7 +13,7 @@ import Loading from '../Loading/Loading';
 const stripePromise = loadStripe('pk_test_51HVdTWBLa4QtAMbzJF8fESJt8K44YI2RpHvgDeomDGPXujOgO65ZODQda0qJjd7KiMCyuKPq1NpAfrpXYhaw5VTG00f5DSaCaY');
 const Payment = () => {
     const {id} =useParams()
-    const url =`http://localhost:5000/booking/${id}`
+    const url =`https://pacific-scrubland-09811.herokuapp.com/booking/${id}`
     // const [user,setUser] =useState({})
     const { data: user, isLoading } = useQuery(['booking', id], () => fetch(url, {
       method: 'GET',
@@ -26,7 +26,7 @@ const Payment = () => {
       return <Loading></Loading>
   }
     // useEffect(() =>{
-    //     fetch(`http://localhost:5000/booking/${id}`)
+    //     fetch(`https://pacific-scrubland-09811.herokuapp.com/booking/${id}`)
     //     .then(res =>res.json())
     //     .then(data =>setUser(data))
     // },[id])

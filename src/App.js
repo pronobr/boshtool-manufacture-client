@@ -17,6 +17,8 @@ import Payment from './components/Dashboard/Payment';
 import MakeAdmin from './components/Dashboard/MakeAdmin';
 import AddProduct from './components/Dashboard/AddProduct/AddProduct';
 import ManageProducts from './components/Dashboard/ManageProducts/ManageProducts';
+import MyPortfolio from './components/MyPortfolio/MyPortfolio';
+import ManageAllOrder from './components/Dashboard/ManageAllOrder';
 
 function App() {
   return (
@@ -42,12 +44,15 @@ function App() {
            <Route path="addproduct" element={<AddProduct></AddProduct>}></Route>
            <Route path="manageproduct" element={<ManageProducts></ManageProducts>}></Route>
            <Route path="makeadmin" element={<MakeAdmin></MakeAdmin>}></Route>
+           <Route path="manageallorder" element={<ManageAllOrder></ManageAllOrder>}></Route>
            <Route path="payment/:id" element={<Payment></Payment>} />
           </Route>
          
          <Route path="/tool/:toolId" element={<PrivateAuth>
           <ToolDetails></ToolDetails>
          </PrivateAuth>} />
+
+         <Route path="/myportfolio" element={<MyPortfolio></MyPortfolio>} />
       </Routes>
     </div>
   );

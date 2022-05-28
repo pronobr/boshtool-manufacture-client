@@ -4,9 +4,9 @@ const Banner = () => {
     return (
         <div class="hero min-h-[637px] bg-hero-pattern ">
   <div class="hero-content text-center">
-    <div class="max-w-md">
-      <h1 class="text-5xl font-bold">Hello there</h1>
-      <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+    <div class="w-[100%]">
+      <h1 class="text-5xl text-white font-bold">BoshTool</h1>
+      <p class="py-6 text-xl text-white font-bold">Best Quality Drill Machine Manufacture Service</p>
       <button class="btn btn-primary">Get Started</button>
     </div>
   </div>

@@ -1,6 +1,12 @@
 import React from 'react';
-
+import useAdmin from '../hooks/useAdmin';
+import { useAuthState } from 'react-firebase-hooks/auth';
+// import { Link, Navigate } from 'react-router-dom';
+import auth from '../../Firebase/Firebase.init';
 const Blogs = () => {
+    const [user, loading, error] = useAuthState(auth);
+    const [admin] =useAdmin(user)
+  console.log(admin)
     return (
         <div className='text-left  w-100 mx-auto pl-16'>
         <h2 className='my-5'>Questions</h2>

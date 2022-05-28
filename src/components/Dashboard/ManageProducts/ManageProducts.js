@@ -4,13 +4,13 @@ import SingleProduct from './SingleProduct';
 const ManageProducts = () => {
     const [product,setProduct] =useState([])
     useEffect(() =>{
-        fetch('http://localhost:5000/tools')
+        fetch('https://pacific-scrubland-09811.herokuapp.com/tools')
         .then(res =>res.json())
         .then(data =>setProduct(data))
     },[])
     return (
         <div class="overflow-x-auto">
-      <table class="table w-full">
+      <table class="table md:w-full sm:table-normal">
       
         <thead>
           <tr>

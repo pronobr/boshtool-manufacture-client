@@ -4,8 +4,9 @@ const useAdmin =user =>{
     const [adminLoading, setAdminLoading] = useState(true);
     useEffect( () =>{
         const email = user?.email;
+        console.log(user)
         if(email){
-            fetch(`http://localhost:5000/admin/${email}`, {
+            fetch(`https://pacific-scrubland-09811.herokuapp.com/admin/${email}`, {
                 method:'GET',
                 headers: {
                     'content-type': 'application/json',
@@ -14,6 +15,7 @@ const useAdmin =user =>{
             })
             .then(res=>res.json())
             .then(data => {
+               console.log(data)
                 setAdmin(data.admin);
                 setAdminLoading(false);
             })

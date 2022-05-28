@@ -5,20 +5,40 @@
         "name": "GBH18V-26DK25",
         "img": "https://www.boschtools.com/us/en/ocsmedia/optimized/800x450xe/cordlessrotaryhammer18vGBH18V26DK25boschkit.png",
         "description":"18V EC Brushless SDS-plus® Bulldog™ 1 In. Rotary Hammer Kit with (2) CORE18V 4.0 Ah ",
+        "minimumOrderQuantity":"120",
+        "availableQuantity":"500",
+        "price":"1000"
+        
+    },
+    {
+
+        "name": "GST18V-47N",
+        "img": "https://www.boschtools.com/us/en/ocsmedia/optimized/800x450xe/cordlessjigsaw18vGST18V47boschbeautyshot.png",
+        "description":"This 18V jig saw delivers powerful and manageable cordless cutting, with its ergonomic, well-balanced barrel-grip design.",
         "minimumOrderQuantity":"80",
         "availableQuantity":"340",
-        "price":"2000",
-        "id":1
+        "price":"2000"
+        
+    },
+    {
+
+        "name": "GDX18V-1860CB15",
+        "img": "https://www.boschtools.com/us/en/ocsmedia/optimized/800x450xe/CordlessImpactDriver18VCoreBoschGDX18V1860CB15Kithero(7).png",
+        "description":"18V Brushless Connected-Ready Freak 1/4 In. and 1/2 In. Two-In-One Bit/Socket Impact ",
+        "minimumOrderQuantity":"300",
+        "availableQuantity":"1200",
+        "price":"3000"
+        
     },
     {
      
         "name": "GBH18V-45CK27",
         "img": "https://www.boschtools.com/us/en/ocsmedia/optimized/800x450xe/rotaryhammersdsmaxhitmanGBH18V45CGBA18V120boschkit(13).png",
         "description":"PROFACTOR 18V Hitman Connected-Ready SDS-max® 1-7/8 In. Rotary Hammer Kit with ",
-        "minimumOrderQuantity":"80",
-        "availableQuantity":"340",
-        "price":"1500",
-        "id":2
+        "minimumOrderQuantity":"160",
+        "availableQuantity":"540",
+        "price":"1200"
+        
     },
     {
      
@@ -27,7 +47,17 @@
       "description":"PROFACTOR 18V Hitman Connected-Ready SDS-max® 1-9/16 In. Rotary Hammer Kit with (2) CORE18V 12.0 Ah PROFACTOR Exclusive Batteries",
       "minimumOrderQuantity":"120",
       "availableQuantity":"400",
-      "price":"1200",
-      "id":3
+      "price":"2200"
+     
+    },
+    {
+     
+      "name": "GCG18V-20N",
+      "img": "https://www.boschtools.com/us/en/ocsmedia/optimized/800x450xe/caulkgun18vBoschGCG18V20beautybare.png",
+      "description":"The Bosch GCG18V-20 18V Caulk and Adhesive Gun provides powered caulking to reduce the fatigue on your hand from manual",
+      "minimumOrderQuantity":"300",
+      "availableQuantity":"3000",
+      "price":"2900"
+     
     }
   ]

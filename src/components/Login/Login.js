@@ -2,10 +2,13 @@ import React from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from "../../../src/Firebase/Firebase.init"
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import useToken from '../hooks/useToken';
 
 const Login = () => {
+  const notify = () => toast("You are logged inn");
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [updateProfile, updating, error2] = useUpdateProfile(auth);
     const [
@@ -19,6 +22,7 @@ const Login = () => {
   const [token] = useToken(user || user1)
   if(token){
     console.log(user)
+    notify()
     // navigate(from, { replace: true });
     navigate('/')
   }

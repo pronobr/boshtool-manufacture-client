@@ -2,7 +2,7 @@ import React from 'react';
 
 const AllUsers = ({items}) => {
     const handleAdmin =() =>{
-        fetch(`http://localhost:5000/user/admin/${items.email}`, {
+        fetch(`https://pacific-scrubland-09811.herokuapp.com/user/admin/${items.email}`, {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

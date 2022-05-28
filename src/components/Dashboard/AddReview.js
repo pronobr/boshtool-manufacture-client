@@ -1,13 +1,17 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 const AddReview = () => {
+  const notify = () => toast("review uploaded!");
+
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data =>{
         const review ={
             comment:data.text,
             rating:data.rating
           }
-          fetch('http://localhost:5000/review', {
+          fetch('https://pacific-scrubland-09811.herokuapp.com/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -19,6 +23,7 @@ const AddReview = () => {
               console.log(data)
                 if(data.success){
                    console.log(data.success)
+                   notify()
                 }
                 else{
                     console.log("alreasy created")

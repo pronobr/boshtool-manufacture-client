@@ -1,6 +1,10 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const AddProduct = () => {
+  const notify = () => toast("Product Uploaded");
     const { register, formState: { errors }, handleSubmit } = useForm();
 
     const imageStorageKey='3865938eefff3a14cd02acc91c1d32e1';
@@ -18,6 +22,7 @@ const AddProduct = () => {
       .then(res=>res.json())
       .then(result =>{
         console.log(result)
+        notify()
         if(result.success){
           const img = result.data.url;
           const product = {
@@ -29,7 +34,7 @@ const AddProduct = () => {
               description:data.description
           }
           console.log(product)
-          fetch('http://localhost:5000/tools', {
+          fetch('https://pacific-scrubland-09811.herokuapp.com/tools', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

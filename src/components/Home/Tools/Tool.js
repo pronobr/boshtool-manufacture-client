@@ -14,6 +14,7 @@ const Tool = ({items}) => {
     <p className='text-xl'>{items.description}</p>
     <p className='text-lg'>Minimum Order Quantity  <span>{items.minimumOrderQuantity}</span></p>
     <p className='text-lg'>Available Quantity  <span>{items.availableQuantity}</span></p>
+    <p className='text-lg'>Available Quantity  <span>{items.price}</span></p>
     <div class="card-actions justify-end">
       <button onClick={()=>nagivateToDetail(items._id)} class="btn btn-primary">Purchase</button>
     </div>
