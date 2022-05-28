@@ -6,7 +6,7 @@ import auth from '../../Firebase/Firebase.init';
 const Blogs = () => {
     const [user, loading, error] = useAuthState(auth);
     const [admin] =useAdmin(user)
-  console.log(admin)
+  // console.log(admin)
     return (
         <div className='text-left  w-100 mx-auto pl-16'>
         <h2 className='my-5'>Questions</h2>
