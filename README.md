@@ -8,8 +8,10 @@ BoshTrool is a Drill Machine tool websit and processes involved in running the d
 
  ### features and functionality
 
-- used firebase for authenticatation
+- Login,Register,Email Verification Implement
+- Every User Has Their Own Dashboard
+- User can Add Product Delete Product and Manage Product From DashBoard
+- User Can Purchase Product By Card
 - used mongodb  for stored all data
-- for secure data jwt implement
-- implement private route for visit only authorized  account
+- for secure data jwt Implement
 - used dotenv for secure authenticatation email and password
